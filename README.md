@@ -10,6 +10,7 @@ For new development teams that are looking to onboard onto TAS, this workshop wi
 * Some Application Architecture best practices on TAS
 
 # Requirements
+### TAS Requirements
 You will need to demo several aspects of the TAS platform.  So, you'll need a functioning TAS installation with the following features enabled:
 * Apps Manager
 * Autoscaler
@@ -18,6 +19,19 @@ You will need to demo several aspects of the TAS platform.  So, you'll need a fu
 * TCP Routing
 * A marketplace service (MySQL preferred)
 * AOA Integrated (optional)
+* TAS Developer Portal (optional)
+
+### Workstation Requirements
+To run the demos on your local laptop, you will need the following installed:
+* [CF CLI](https://github.com/cloudfoundry/cli)
+* [Demo Magic](https://github.com/paxtonhare/demo-magic) (To auto-type demo commands)
+* A Mac or Linux Shell is helpful
+
+### Workshop Leader
+To run this workshop, you should have at least a level 200 knowledge of TAS, with the ability to use most of its functions and be able to explain how it works at a high level.
+
+You should familiarize yourself with the [CF Samples repository](https://github.com/cloudfoundry-samples) to build demos that are applicable to your client.  
+
 
 # Agenda
 The workshop was designed to be delivered in two 4-hour sessions.  The first day aimed and deploying applications, and the second day on operations during runtime.  There are anchor slides with basic diagrams, but they must be delivered alongside platform demonstrations, whiteboarding and open dialog.  The slides to not stand on their own.
