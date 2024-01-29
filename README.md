@@ -13,6 +13,11 @@ For new development teams that are looking to onboard onto TAS, this workshop wi
 You will need to demo several aspects of the TAS platform.  So, you'll need a functioning TAS installation with the following features enabled:
 * Apps Manager
 * Autoscaler
+* App Metrics
+* Container Networking
+* TCP Routing
+* A marketplace service (MySQL preferred)
+* AOA Integrated (optional)
 
 # Agenda
 The workshop was designed to be delivered in two 4-hour sessions.  The first day aimed and deploying applications, and the second day on operations during runtime.  There are anchor slides with basic diagrams, but they must be delivered alongside platform demonstrations, whiteboarding and open dialog.  The slides to not stand on their own.
@@ -42,6 +47,7 @@ The workshop was designed to be delivered in two 4-hour sessions.  The first day
 * Application Networks and Routing
   * Architecture overview and Network flow
   * Routes and Domains
+  * TCP Routing
   * DEMO: Blue-Green Deployment
   * Container networking
     * DEMO: C2C networking with dogs and cats
@@ -52,7 +58,32 @@ The workshop was designed to be delivered in two 4-hour sessions.  The first day
   * DEMO: Provision UPS and show app environment
 
 ### Day 2 - Application Operations
+* TAS Architecture Review
+* CI/CD
+  * CI/CD best practices with TAS
+  * DEMO: ADO Example Template
+* Basic Application Operations
+  * Start / Stop / Restart / Restage
+  * Restart vs. Restage
+  * Advanced Operations and Plugins
+* Orgs, Spaces, Quota and Entitlements
+  * Tenancy and Org/Space Hierarchy
+  * Roles
+  * Quota Resources
+  * CPU Entitlement
+* Health Checks
+  * Health Check Categories
+  * Health Check Types
+* Application Logging
+  * TAS Logging Architecture
+  * DEMO: On-Platform Log Monitoring
+  * Integrations
+* Application Metrics
+  * DEMO: On-Platform App Metrics
+  * Integrations
+  * AOA Integration (Optional)
+* Common Challenges and Discussion
 
+# Slide Deck (Broadcom Only)
+[Google Sheets LINK](https://docs.google.com/presentation/d/1p4WGFhp0dRnb1-GPNesBubDjfELID5Pz/edit?usp=sharing&ouid=101770750454829329029&rtpof=true&sd=true)
 
-
-# Instructions for Workshop Lead
