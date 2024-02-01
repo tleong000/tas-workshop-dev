@@ -1,5 +1,5 @@
-# TAS Developer Workshop
-A TAS workshop aimed at educating new developers onboarding onto the platform.
+# TAS Developer Workshop - WORK IN PROGRESS
+A TAS workshop aimed at educating new developers onboarding onto the platform.  **Content is still being created, so this is not complete yet.**
 
 # Workshop Overview
 For new development teams that are looking to onboard onto TAS, this workshop will introduce them to TAS and provide a good understanding of the following topics:
