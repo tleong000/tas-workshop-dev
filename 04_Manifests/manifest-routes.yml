@@ -1,0 +1,17 @@
+---
+applications:
+- name: myqpp
+  instances: 1
+  memory: 2G
+  disk_quota: 256M
+  path: target/myapp.jar
+  env:
+    LOGGING_LEVEL: debug
+  routes:
+  - route: myapp.example.com
+  - route: myapp-v1.test.example.com
+  buildpacks:
+   - java_buildpack
+  services:
+  - mysql-demo
+  - redis-cache

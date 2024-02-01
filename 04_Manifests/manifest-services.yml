@@ -1,0 +1,9 @@
+---
+applications:
+  - name: grailspong
+    memory: 1G
+    instances: 2
+    path: target/pong_matcher_grails-0.1.war
+    buildpack: java_buildpack
+    services:
+      - mysql
