@@ -20,6 +20,7 @@ You will need to demo several aspects of the TAS platform.  So, you'll need a fu
 * A marketplace service (MySQL preferred)
 * AOA Integrated (optional)
 * TAS Developer Portal (optional)
+  
 Once you have an environment, you may want to configure the .cfenv file in this repo, as several of the demo scripts 
 
 ### Workstation Requirements
@@ -40,14 +41,14 @@ The workshop was designed to be delivered in two 4-hour sessions.  The first day
 **NOTE**: This is not yet structured as a hands-on workshop.  There are no user exercises at this time.  This will be developed.
 
 ### Day 1 - App Deployment
-* Cloud Native Platforms
+* [Cloud Native Platforms](./01_CloudNative/readme.md)
   * Traditional vs. IAAS vs. PAAS
   * TAS Benefits
   * 12-Factor
-* Quick Demo of TAS
+* [Quick Demo of TAS](./02_QuickDemo/readme.md)
   * DEMO: `cf push` with description of process
   * Apps Manager Walkthrough
-* Buildpacks
+* [Buildpacks](./03_Buildpacks/readme.md)
   * How Apps are staged
   * Buildpack Review
     * What / Why of buildpacks
@@ -55,49 +56,49 @@ The workshop was designed to be delivered in two 4-hour sessions.  The first day
     * DEMO: Available Buildpacks
     * Walkthrough of Java Buildpack GITHUB
     * Configuration Options
-* Deploying with Application Manifests
+* [Deploying with Application Manifests](./04_Manifests/readme.md)
   * Basic Manifest example
   * Adding Environment variables
   * Advanced Example walkthrough
-* Application Networks and Routing
+* [Application Networks and Routing](./05_Networking/readme.md)
   * Architecture overview and Network flow
   * Routes and Domains
   * TCP Routing
   * DEMO: Blue-Green Deployment
   * Container networking
     * DEMO: C2C networking with dogs and cats
-* Services
+* [Services](./06_Services/readme.md)
   * Review of Services (Marketplace vs UPS)
   * How services are delivered
   * DEMO: Provision Marketplace service and show environment
   * DEMO: Provision UPS and show app environment
 
 ### Day 2 - Application Operations
-* TAS Architecture Review
-* CI/CD
+* [TAS Architecture Review](./07_ArchReview/readme.md)
+* [CI/CD](./08_CICD/readme.md)
   * CI/CD best practices with TAS
   * DEMO: ADO Example Template
-* Basic Application Operations
+* [Basic Application Operations](./09_AppOps/readme.md)
   * Start / Stop / Restart / Restage
   * Restart vs. Restage
   * Advanced Operations and Plugins
-* Orgs, Spaces, Quota and Entitlements
+* [Orgs, Spaces, Quota and Entitlements](./10_OrgSpaceQuota/readme.md)
   * Tenancy and Org/Space Hierarchy
   * Roles
   * Quota Resources
   * CPU Entitlement
-* Health Checks
+* [Health Checks](./11_HealthCheck/readme.md)
   * Health Check Categories
   * Health Check Types
-* Application Logging
+* [Application Logging](./12_Logging/readme.md)
   * TAS Logging Architecture
   * DEMO: On-Platform Log Monitoring
   * Integrations
-* Application Metrics
+* [Application Metrics](./13_Metrics/readme.md)
   * DEMO: On-Platform App Metrics
   * Integrations
   * AOA Integration (Optional)
-* Common Challenges and Discussion
+* [Common Challenges and Discussion](./14_Challenges/readme.md)
 
 # Slide Deck (Broadcom Only)
 [Google Sheets LINK](https://docs.google.com/presentation/d/1p4WGFhp0dRnb1-GPNesBubDjfELID5Pz/edit?usp=sharing&ouid=101770750454829329029&rtpof=true&sd=true)
