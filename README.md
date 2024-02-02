@@ -20,6 +20,7 @@ You will need to demo several aspects of the TAS platform.  So, you'll need a fu
 * A marketplace service (MySQL preferred)
 * AOA Integrated (optional)
 * TAS Developer Portal (optional)
+Once you have an environment, you may want to configure the .cfenv file in this repo, as several of the demo scripts 
 
 ### Workstation Requirements
 To run the demos on your local laptop, you will need the following installed:

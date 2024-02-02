@@ -21,3 +21,5 @@ DEMO [cats and dogs without Service Discovery](https://github.com/cloudfoundry-a
 
 Demo magic script: [c2c.sh](./c2c.sh)
 
+# Break?
+This is a good time to break as services is next and is another lengthy discussion.
