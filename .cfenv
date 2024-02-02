@@ -1,4 +1,4 @@
-CFAPI="https://api.sys.dhaka.cf-app.com"
+CFAPI=""
 CFORG=""
 CFSPACE=""
 CFUSER=""

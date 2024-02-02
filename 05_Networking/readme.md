@@ -8,6 +8,8 @@ Once through the front LB, traffic will pass to the GoRouters.  These carry a ro
 # Blue-Green Deployment
 Express the sheer power of this capability.  As possibly the best example of how this can be used, would be a Blue-Green deployment.  Animated slide will display how this works to upgrade or push a new version of an app with zero downtime, the ability to fully test, and rapid rollback.
 
+**This is one of the most powerful capabilities and demos in this session.  Take time to focus on this and explain it fully.**
+
 Demo Blue-Green Deployment with the test-app.  Demo Magic script: [blue-green.sh](./blue-green.sh)
 
 # Application network flow and C2C

@@ -21,16 +21,20 @@ You will need to demo several aspects of the TAS platform.  So, you'll need a fu
 * AOA Integrated (optional)
 * TAS Developer Portal (optional)
   
-Once you have an environment, you may want to configure the .cfenv file in this repo, as several of the demo scripts 
+Once you have an environment, you may want to configure the [.cfenv](./.cfenv) file in this repo, as several of the demo scripts pull in environment variables.
 
 ### Workstation Requirements
 To run the demos on your local laptop, you will need the following installed:
 * [CF CLI](https://github.com/cloudfoundry/cli)
+* [CPU Entitlement Plugin](https://github.com/cloudfoundry/cpu-entitlement-plugin)
 * [Demo Magic](https://github.com/paxtonhare/demo-magic) (To auto-type demo commands)
 * A Mac or Linux Shell is helpful
+* [CF Targets Plugin](https://github.com/guidowb/cf-targets-plugin) is helpful to quickly switch between CF foundations without having to re-authenticate
 
 ### Workshop Leader
 To run this workshop, you should have at least a level 200 knowledge of TAS, with the ability to use most of its functions and be able to explain how it works at a high level.
+
+Scripts and Readme for each agenda module are provided as a guideline ONLY.  You will need to look through the readme files and demo scripts to ensure they will work for your use-case.
 
 You should familiarize yourself with the [CF Samples repository](https://github.com/cloudfoundry-samples) to build demos that are applicable to your client.  
 

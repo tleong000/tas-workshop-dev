@@ -1,0 +1,52 @@
+
+
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Maven@4
+  displayName: BuildandTest
+  inputs:
+    mavenPomFile: 'pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
+    
+- script: |
+    curl -L "https://packages.cloudfoundry.org/stable?release=linux64-binary&version=v8&source=github" | tar -zx
+    chmod a+x cf
+    ./cf api $CFAPI
+    ./cf login -u $CFUSER -p $CFPASS -o $CFORG -s $CFPASS
+    ./cf service testCups || ./cf cups testCups -p '{"host":"db.example.com","username":"dbuser","password":"dbpass","dbname":"mydb"}'
+  displayName: 'DeployServices'
+
+- script: |
+    echo "Deploy NEW"
+    ./cf push spring-petclinic-new --no-start
+    ./cf bs spring-petclinic-new testCups
+    ./cf start spring-petclinic-new
+  displayName: 'DeployNewApp'
+
+- script: |
+    echo "Test"
+    curl -w "%{response_code}" -f $NEWAPPURL > /dev/null
+    if [ $? -ne 0 ]; then echo "FAIL TEST"; exit 1; fi
+  displayName: 'TestApp'
+
+- script: |
+    echo "Mapping Routes..."
+    ./cf map-route spring-petclinic-new $DOMAIN --hostname spring-petclinic
+    ./cf unmap-route spring-petclinic $DOMAIN --hostname spring-petclinic
+  displayName: 'MapRoute'

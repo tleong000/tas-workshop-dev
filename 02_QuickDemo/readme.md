@@ -8,21 +8,7 @@ Example App
 
 Git clone this app and immediately CF PUSH after logging on.  Describe the commands being issued and the process as it's happening (detect, stage, deployed)
 
-Sample Demo Magic Script:
-```
-#!/usr/bin/env bash
-
-. demo-magic/demo-magic.sh
-
-clear
-
-pe "git clone https://github.com/cloudfoundry-samples/test-app"
-pe "cd test-app"
-pe "ls -l"
-pe "cf login -a https://${CFAPI} --sso -o ${CFORG} -s ${CFSPACE}"
-pe "cf push test-app"
-
-```
+Sample Demo Magic Script: [cfpush.sh](./cfpush.sh)
 
 Following the Push, Log on to Apps Manager and show the app running, look at logs, look at metrics and poke around apps manager.  
 * Show how an app can be stopped, started and scaled.  
