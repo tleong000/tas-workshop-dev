@@ -1,6 +1,8 @@
 # TAS Developer Workshop - WORK IN PROGRESS
 A TAS workshop aimed at educating new developers onboarding onto the platform.  **Content is still being created, so this is not complete yet.**
 
+[Accompanying Slide Deck](https://docs.google.com/presentation/d/1p4WGFhp0dRnb1-GPNesBubDjfELID5Pz/edit?usp=sharing&ouid=101770750454829329029&rtpof=true&sd=true) (Broadcom ONLY)
+
 # Workshop Overview
 For new development teams that are looking to onboard onto TAS, this workshop will introduce them to TAS and provide a good understanding of the following topics:
 * Cloud Native platforms, how TAS fits and what problems it solves

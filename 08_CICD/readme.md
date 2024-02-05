@@ -4,4 +4,5 @@ Focus on the fact that yesterday's content was intended to show you the capabili
 
 So, we are going to look at a real live pipeline that does most of the actions we covered yesterday.
 
+Concourse Sample Blue/Green Deployment: https://github.com/vmware-archive/concourse-pipeline-samples/tree/master/pipelines/appdev/blue-green-app-deployment
 Sample ADO Pipeline: [azure-pipeline.yml](./azure-pipeline.yml)

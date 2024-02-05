@@ -3,10 +3,12 @@ Tying in the concept of routing from the last manifest showed, devs are free to 
 
 Time to go a bit into platform architecture.  Discuss the TAS front door with local load balancers that own IPs that resolve from a wildcard domain in DNS. This allows for any url within a domain to be directed to the front door IPs of the foundation.  Custom domains are possible as well, but they need to be configured individually.
 
-Once through the front LB, traffic will pass to the GoRouters.  These carry a route tables linking your chosen URL to the IPs and Ports of your application instances running on the diego cells.
+Once through the front LB, traffic will pass to the GoRouters.  These carry a route tables linking your chosen URL/path to the IPs and Ports of your application instances running on the diego cells.
+
+Describe how Routing works and how you can assign an FQDN or FQDN/Path to an application for proper routing through the gorouters.  If appropriate, talk about TCP routing as well and how Ports are reserved.
 
 # Blue-Green Deployment
-Express the sheer power of this capability.  As possibly the best example of how this can be used, would be a Blue-Green deployment.  Animated slide will display how this works to upgrade or push a new version of an app with zero downtime, the ability to fully test, and rapid rollback.
+Express the sheer power of this capability.  As possibly the best example of how this can be used, would be a Blue-Green deployment.  CF PUSH is an service-impacting command, and downtime will occur as the app is staged and deployed on top of the running app.  Blue/Green can help.  Animated slide will display how this works to upgrade or push a new version of an app with zero downtime, the ability to fully test, and rapid rollback.
 
 **This is one of the most powerful capabilities and demos in this session.  Take time to focus on this and explain it fully.**
 
