@@ -25,3 +25,8 @@ Cover the differences between the following HC options for AI:
 Also cover the difference between Liveliness and Readiness Checks
 * Liveliness - If fails, AI will crash and restart
 * Readiness - If Fails, AI will be taken out of the routing table, but will not crash
+
+As an analogy, you can say something like: "I'm **ALIVE** and standing, but I'm not **READY** to run a marathon or go on Jeopardy".  Same with Apps, they may be **ALIVE** and listening on an open port, but not **READY** to start accepting transactions.  Readiness checks indicate when they are actually **READY**.
+
+When healthchecks fail, and you need to diagnose issues, the platform offers options in the form of logging and metrics...
+
