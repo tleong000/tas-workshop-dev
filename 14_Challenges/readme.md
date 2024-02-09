@@ -17,7 +17,7 @@ As a new development team that is migrating from IaaS or a VM-based deployment, 
 Review the problems with viewing CPU utilization as reported from the CLI/AppsManager and using it as input for autoscaling rules.
 
 ### Large Apps and Application Sizing
-TAS allows for fairly large application sizes, however running large applications in TAS can be problematic in a number of ways.  For instance it will be harder to schedule an app on Diego Cells that are close to full capacity.  Also, startup may take longer resulting in failed application start HC.  Promote the de-coupling of large apps into smaller microservices.
+TAS allows for fairly [large application sizes](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/5.0/tas-for-vms/deploy-apps-large-app-deploy.html), however running large applications in TAS can be problematic in a number of ways.  Promote the de-coupling of large apps into smaller microservices.
 
 ### 12-Factor Misalignment
 TAS was created as the ideal platform to efficiently host webapps and microservices that align to the cloud native principals of [12-factor](https://12factor.net).  Because TAS provides the easiest and shortest path to production for these types of workloads, it may be desireable to offer it to other workloads that do not align to those principals.  We would caution development teams and Platform Engineers from onboarding these apps without at least considering their design to ensure they are a proper fit.  Failure to do so may cause issues down the road when TAS maintenance occurs, rapid scaling for your app is required or a number of other events that require cloud native design.

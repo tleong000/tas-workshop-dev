@@ -12,7 +12,8 @@ Express the sheer power of this capability.  As possibly the best example of how
 
 **This is one of the most powerful capabilities and demos in this session.  Take time to focus on this and explain it fully.**
 
-Demo Blue-Green Deployment with the test-app.  Demo Magic script: [blue-green.sh](./blue-green.sh)
+Demo Blue-Green Deployment with the test-app.  
+Demo Magic script: [blue-green.sh](./blue-green.sh)
 
 # Application network flow and C2C
 In slide, describe hairpin path for one app to talk with another app.  This is sometimes not ideal and apps want to talk directly.  C2C allows it.
