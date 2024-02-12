@@ -26,7 +26,7 @@ TAS was created as the ideal platform to efficiently host webapps and microservi
 TAS is a shared platform where a large population of applications share a common pool of compute and network resources.  It is therefore not uncommon for bursting or compute-heavy workloads to cause performance issues for other apps on the platform.  Especially during maintenance or unplanned outages where capacity of the platform is reduced.  It will be very important for platform engineers to identify noisy and bursting applications so they can be notified and potentially isolated.
 
 #### Tanzu Intelligence to the rescue!
-Use this as an opportunity to promote full stack observability using Tanzu Intelligence products like Aria Operations for Applications.  AOA integrates with TAS which allows for more immediate RCA of performance bottlenecks or identification of noisy and bursting applications.
+In this scenario, you may want to leverage full stack observability using Tanzu Intelligence products like Aria Operations for Applications.  AOA integrates with TAS which allows for more immediate RCA of performance bottlenecks or identification of noisy and bursting applications.
 
 ### Buildpack LCM
 Application owners no longer have full control of their software stack.  They need to partner with platform engineers who are now responsible for buildpack updates and lifecycle management.  It will be important for app teams to integrate buildpack testing into their normal maintenance and upgrade processes to ensure the application stays up to date with the latest buildpack changes.
